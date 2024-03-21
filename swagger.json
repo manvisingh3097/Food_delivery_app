@@ -1,0 +1,127 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Blog API Documentation",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "host": "localhost:8080",
+  "basePath": "/",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/put_org": {
+      "post": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/get_all_orgs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/put_price": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "org_id": {
+                  "example": "any"
+                },
+                "item_id": {
+                  "example": "any"
+                },
+                "zone": {
+                  "example": "any"
+                },
+                "base_dis_in_km": {
+                  "example": "any"
+                },
+                "km_price": {
+                  "example": "any"
+                },
+                "fix_price": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/get_price": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "zone",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "organisation_id",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "total_distance",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "item_type",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/test/test-user": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
