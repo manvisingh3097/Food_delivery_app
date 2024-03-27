@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/put_org", async (req, res) => {
-  const newOrg = await Org.create({ name: "asd" });
+  const newOrg = await Org.create({ name: req.body.name });
   return res.status(200).send(newOrg);
 });
 
