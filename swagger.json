@@ -5,7 +5,7 @@
     "description": "",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "food-delivery-app-ijf8.onrender.com",
   "basePath": "/",
   "schemes": [
     "http",
